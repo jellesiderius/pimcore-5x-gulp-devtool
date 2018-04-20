@@ -10,7 +10,7 @@ var folder = path.split("/").pop(-1);
 
 gulp.task('browser-sync', ['sass'], function() {
     bs.init({
-        proxy: folder + '.dev.cream.nl',
+        proxy: folder + '.dev.name.nl',
         notify: true
     });
 });
