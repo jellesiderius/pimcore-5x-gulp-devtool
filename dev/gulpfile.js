@@ -5,12 +5,9 @@ var fs = require('fs-extra');
 var cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 
-var path = fs.realpathSync('../');
-var folder = path.split("/").pop(-1);
-
 gulp.task('browser-sync', ['sass'], function() {
     bs.init({
-        proxy: folder + '.local',
+        proxy: "domain.com",
         notify: true
     });
 });
