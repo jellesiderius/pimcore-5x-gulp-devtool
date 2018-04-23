@@ -31,7 +31,7 @@ gulp.task('sass', function () {
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch("../web/skin/**/*.scss", ['sass']);
     gulp.watch("../src/AppBundle/**/*.php").on('change', bs.reload);
-    gulp.watch("../app//Resources/**/*.html.php").on('change', bs.reload);
+    gulp.watch("../app/Resources/**/*.html.php").on('change', bs.reload);
 });
 
 function swallowError (error) {
